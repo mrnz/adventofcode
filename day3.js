@@ -46,12 +46,72 @@ var input = require('./assets/day3-input');
 				break;				
 		}
 		temp = actualPosition[0] + 'x' +  actualPosition[1];
-		console.log(temp)
 		if(map.indexOf(temp) === -1){
 			map.push(temp); 
 		}
 
 			
+	
+	};
+	console.log('Result: ' + map.length );
+})();
+
+
+
+
+/*-- Part Two ---
+
+The next year, to speed up the process, Santa creates a robot version of himself, Robo-Santa, to deliver presents with him.
+
+Santa and Robo-Santa start at the same location (delivering two presents to the same starting house), 
+then take turns moving based on instructions from the elf, 
+who is eggnoggedly reading from the same script as the previous year.
+
+This year, how many houses receive at least one present?
+
+For example:
+
+^v delivers presents to 3 houses, because Santa goes north, and then Robo-Santa goes south.
+^>v< now delivers presents to 3 houses, and Santa and Robo-Santa end up back where they started.
+^v^v^v^v^v now delivers presents to 11 houses, with Santa going one direction and Robo-Santa going the other.
+*/
+
+(function() { 
+
+	var l = input.length;
+	var map = ['0x0'];
+	var pos = {
+	  actualPositionS : [0,0],
+	  actualPositionR : [0,0]
+	}
+	var temp; 
+	for (var i = 0; i < l -1; i++) {
+
+		var step =  input[i];
+		var next;
+		var varName = 'actualPositionS';
+		if(i%2 === 1){
+			varName = "actualPositionR";
+		}
+		switch (step){
+			case '^':
+				pos[varName][1] += 1;
+				break;
+			case 'v': 
+				pos[varName][1] -= 1;
+				break;
+			case '>': 
+				pos[varName][0] += 1;
+				break;
+			case '<': 
+				pos[varName][0] -= 1;
+				break;				
+		}
+		temp = pos[varName][0] + 'x' +  pos[varName][1];
+
+		if(map.indexOf(temp) === -1){
+			map.push(temp); 
+		}
 	
 	};
 	console.log('Result: ' + map.length );
