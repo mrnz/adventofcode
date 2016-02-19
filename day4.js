@@ -18,40 +18,35 @@ Your puzzle input is "yzbqklnj"
 
 */
 
-
-
 var prefix = 'yzbqklnj';
 var timer = require("./helpers/timer.js");
 var CryptoJS = require("./helpers/md5.js");
 var md5 = CryptoJS.MD5;
 var input = prefix;
 
-
 (function() {
 
-	timer.start()
-	var result, n;
+  timer.start()
+  var result, n;
 
-	result = false;
-	n = 0;
-	
-	
-	while(result === false){
+  result = false;
+  n = 0;
+  
+  
+  while(result === false){
 
-		var hash = md5( prefix + n.toString() ).toString();
+    var hash = md5( prefix + n.toString() ).toString();
 
-		if(hash.slice(0,5) === '00000'){
-			result = n;
-		}	
+    if(hash.slice(0,5) === '00000'){
+      result = n;
+    } 
 
-		if(n%10000 === 0){
-			console.log(n)
-		}
+    if(n%10000 === 0){
+      console.log(n)
+    }
 
-		n++;
-	} 
-	console.log('Result: ' + result + ' Time: ' + timer.stop() + ' sec');
-	
-
+    n++;
+  } 
+  console.log('Result: ' + result + ' Time: ' + timer.stop() + ' sec');
+  
 })();
-

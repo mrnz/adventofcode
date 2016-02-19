@@ -18,24 +18,24 @@ var input = require('./assets/day2-input');
 
 (function() {
 
-	var result = 0;
-	input.forEach(function(line, index) {
-		
-		var arr = line.split('x');
+  var result = 0;
+  input.forEach(function(line, index) {
+    
+    var arr = line.split('x');
 
-		arr.forEach(function(dimeter, ind) { 
-			arr[ind] = parseInt(dimeter);
-		});
+    arr.forEach(function(dimeter, ind) { 
+      arr[ind] = parseInt(dimeter);
+    });
 
-		arr.sort(function(a,b) {
-			return a - b;
-		});
+    arr.sort(function(a,b) {
+      return a - b;
+    });
 
-		
-		result += 2*arr[0] + 2*arr[1] + (arr[0]*arr[1]*arr[2]);
+    
+    result += 2*arr[0] + 2*arr[1] + (arr[0]*arr[1]*arr[2]);
 
-	});
+  });
 
-	console.log('Result: ' + result)
+  console.log('Result: ' + result)
 
 })();
