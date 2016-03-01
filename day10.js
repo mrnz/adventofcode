@@ -20,35 +20,32 @@ Your puzzle input is 3113322113.
 
 (function(input) {
 
-	var string = input;
-	
-	for (var i = 0; i < 40; i++) {
+  var string = input;
+  
+  for (var i = 0; i < 40; i++) {
 
-		var stringLength = string.length,
-				memo = '',
-				j;
+    var stringLength = string.length,
+        memo = '';
 
-		for (j = 0; j < stringLength; ) {
+    for (var j = 0; j < stringLength; ) {
 
-			var factor = 1;
-			
-			while(string[j] === string[j+1]){
-				++j;
-				++factor;
-			};
+      var factor = 1;
+      
+      while(string[j] === string[j+1]){
+        ++j;
+        ++factor;
+      };
 
-			memo += factor+''+string[j]
-			j++;
+      memo += factor+''+string[j]
+      j++;
 
-		};
+    };
 
-		string = memo;
+    string = memo;
 
-	};
+  };
 
-	console.log(string.length)
-
-
+  console.log(string.length)
 
 })("3113322113");
 
