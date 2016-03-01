@@ -61,7 +61,6 @@ var input = require('./assets/day12-input.js');
     if(!Array.isArray(obj)){
       for(var i in obj) {
         if(obj.hasOwnProperty(i)){
-          //console.log(obj[i]);
           if(obj[i] === 'red'){
             return null;
           }
@@ -71,7 +70,6 @@ var input = require('./assets/day12-input.js');
     }
     for(var i in obj) {
       if(obj.hasOwnProperty(i)){
-        //console.log(obj[i]);
         if( typeof obj[i] === 'object' ){
           iterate(obj[i]) 
         }else if(typeof obj[i] ===  'number'){
