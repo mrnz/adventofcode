@@ -22,7 +22,7 @@ Your puzzle input is 3113322113.
 
 	var string = input;
 	
-	 for (var i = 0; i < 40; i++) {
+	for (var i = 0; i < 40; i++) {
 
 		var stringLength = string.length,
 				memo = '',
