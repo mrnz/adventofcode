@@ -22,7 +22,7 @@ Your puzzle input is 3113322113.
 
   var string = input;
   
-  for (var i = 0; i < 40; i++) {
+  for (var i = 0; i < 50; i++) {
 
     var stringLength = string.length,
         memo = '';
@@ -50,3 +50,13 @@ Your puzzle input is 3113322113.
 })("3113322113");
 
  
+/*
+--- Part Two ---
+
+Neat, right? You might also enjoy hearing John Conway talking about this sequence (that's Conway of Conway's Game of Life fame).
+
+Now, starting again with the digits in your puzzle input, apply this process 50 times. What is the length of the new result?
+
+Your puzzle input is still 3113322113.
+
+*/
