@@ -15,6 +15,7 @@ In this example, after the 1000th second, both reindeer are resting, and Comet i
 
 Given the descriptions of each reindeer (in your puzzle input), after exactly 2503 seconds, what distance has the winning reindeer traveled?
 */
+
 var fs = require('fs'),
     input = fs.readFileSync(__dirname+'/assets/day14-input.js').toString(),
     lines = input.split('\n');
@@ -62,11 +63,12 @@ var fs = require('fs'),
 
     };
 
-    //console.log('distance: '+distance+'; time:' + time + '; phase: '+ (phase ? 'fly' : 'rest') + '; where rest time: ' + restTime + '; speed: ' + speed + '; fly time: ' + flyTime )
     results.push(distance);
 
   }); 
-  console.log(results.sort(function(a,b) { return a<b; })[0])
+  
+  console.log(results.sort(function(a,b) { return a<b; })[0]);
+
 })(lines, 2503);
 
 
@@ -91,3 +93,67 @@ Again given the descriptions of each reindeer (in your puzzle input), after exac
 how many points does the winning reindeer have?
 
 */
+
+
+(function (data, totalTime) {
+  
+  var results = [];
+  
+  for (var i = 1; i <= totalTime; i++) {  
+
+    var distancesInTimePoint = [];
+
+
+    data.forEach(function(line, index) {
+      
+      var time = i,
+          distance = 0,
+          phase = true,
+          memo = time,
+          speed = parseInt(line.match(/\d+ km/g)),
+          flyTime = parseInt(line.match(/\d+ se/g)[0]),
+          restTime = parseInt(line.match(/\d+ se/g)[1]);
+
+      results[index] = results[index] || 0;
+      distancesInTimePoint[index] = distancesInTimePoint[index] || 0;
+
+      (function calculatePosition () {
+        if(memo === 0)return;
+        if(phase){
+          if(memo > flyTime){
+            distance+=speed*flyTime;
+            memo-=flyTime;
+          }else{
+            distance+=speed*memo;
+            memo-=memo;
+          }
+        }else{
+          if(memo > restTime){
+            memo-=restTime;
+          }else{
+            memo-=memo;
+          }
+        }
+        phase = !phase;
+        calculatePosition();
+
+      })();
+      
+      distancesInTimePoint[index] = distance;
+
+    });
+    
+        
+    resultsAtThisTimePoint = distancesInTimePoint.reduce(function(previousValue, currentValue, currentIndex) {
+      return previousValue.concat(currentValue === Math.max.apply(Math, distancesInTimePoint) ? [currentIndex] : []);
+    },[]);
+    
+    resultsAtThisTimePoint.forEach(function(v,i) {
+      results[v] += 1;
+    });
+    
+  };
+
+  console.log(Math.max.apply(Math, results ) );
+
+})(lines, 2503);
