@@ -1,4 +1,6 @@
-/*--- Day 5: Doesn't He Have Intern-Elves For This? ---
+# Day 5: Doesn't He Have Intern-Elves For This?
+
+### --- Part One ---
 
 Santa needs help figuring out which strings in his text file are naughty or nice.
 
@@ -14,38 +16,11 @@ aaa is nice because it has at least three vowels and a double letter, even thoug
 jchzalrnumimnmhp is naughty because it has no double letter.
 haegwjzuvuyypxyu is naughty because it contains the string xy.
 dvszwmarrgswjxmb is naughty because it contains only one vowel.
-How many strings are nice?*/
+How many strings are nice?
 
+Your puzzle answer was 236.
 
-var data = require("./assets/day5-input.js")();
-var timer = require("./helpers/timer.js");
-
-(function(input) {
-  
-  var result, test1, test2, test3, startTime;
-
-  timer.start();
-
-  result = 0; 
-  test1 = /[aeiou].*[aeiou].*[aeiou]/;
-  test2 = /.*([a-z])\1{1}/;
-  test3 = /^((?!ab|cd|pq|xy).)*$/;
-  
-  input.forEach(function(string, index) {
-    
-    if( test1.test(string) && test2.test(string) && test3.test(string) ){
-      result++;
-    }
-      
-  });
-  
-  console.log("Result is: " + result + ' In ' + timer.stop() + ' sec' );
-
-})(data);
-
-
-
-/*--- Part Two ---
+### --- Part Two ---
 
 Realizing the error of his ways, Santa has switched to a better model of determining whether a string is naughty or nice. None of the old rules apply, as they are all clearly ridiculous.
 
@@ -60,27 +35,3 @@ xxyxx is nice because it has a pair that appears twice and a letter that repeats
 uurcxstgmygtbstg is naughty because it has a pair (tg) but no repeat with a single letter between them.
 ieodomkazucvgmuy is naughty because it has a repeating letter with one between (odo), but no pair that appears twice.
 How many strings are nice under these new rules?
-*/
-
-(function(input) {
-  
-  var result, test1, test2, test3, startTime;
-
-  timer.start();
-
-  result = 0; 
-  test1 = /\w*(\w{2})\w*\1/;
-  test2 = /(\w)\w\1/;
-  
-  
-  input.forEach(function(string, index) {
-    
-    if( test1.test(string) && test2.test(string) ){
-      result++;
-    }
-      
-  });
-  
-  console.log("Result is: " + result + ' In ' + timer.stop() + ' sec' );
-
-})(data);

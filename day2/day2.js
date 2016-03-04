@@ -1,5 +1,5 @@
 const fs = require('fs');
-var input = fs.readFileSync(__dirname+'/assets/day2-input.js').toString().split('\n');
+var input = fs.readFileSync(__dirname+'/day2-input.txt').toString().split('\n');
 
 (function() {
 

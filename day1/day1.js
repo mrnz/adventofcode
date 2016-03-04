@@ -1,15 +1,14 @@
 
 
-var input = require('./assets/day1-input');
-var timer = require("./helpers/timer.js");
+const fs = require('fs');
+var input = fs.readFileSync(__dirname+'/day1-input.txt').toString();
+var lines = input.split('\n');
 
 (function(d) {
   
   var i = 0
   var result = 0;
   var firstInBasement = false;
-  
-  timer.start();
 
   while( i < input.length ){
     
@@ -26,7 +25,7 @@ var timer = require("./helpers/timer.js");
     i++;
   }
   
-  console.log('Result: ' + result + ' Time: ' + timer.stop() + ' sec')
+  console.log('Result: ' + result )
   console.log("Santa entered first time to the basement in " + firstInBasement + " step" );
 
 })();
