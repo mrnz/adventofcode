@@ -1,13 +1,11 @@
 
 const fs = require('fs');
 var input = fs.readFileSync(__dirname+'/day5-input.txt').toString().split('\n');
-var timer = require("./helpers/timer.js");
+
 
 (function(input) {
   
   var result, test1, test2, test3, startTime;
-
-  timer.start();
 
   result = 0; 
   test1 = /[aeiou].*[aeiou].*[aeiou]/;
@@ -22,7 +20,7 @@ var timer = require("./helpers/timer.js");
       
   });
   
-  console.log("Result is: " + result + ' In ' + timer.stop() + ' sec' );
+  console.log("Result is: " + result );
 
 })(input);
 
@@ -30,8 +28,6 @@ var timer = require("./helpers/timer.js");
 (function(input) {
   
   var result, test1, test2, test3, startTime;
-
-  timer.start();
 
   result = 0; 
   test1 = /\w*(\w{2})\w*\1/;
@@ -46,6 +42,6 @@ var timer = require("./helpers/timer.js");
       
   });
   
-  console.log("Result is: " + result + ' In ' + timer.stop() + ' sec' );
+  console.log("Result is: " + result );
 
 })(input);
