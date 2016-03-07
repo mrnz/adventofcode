@@ -1,0 +1,33 @@
+{
+  "name": "advent-of-code-mrnz",
+  "version": "1.0.0",
+  "description": "my solutions of problems from adventofcode.com",
+  "main": "index.js",
+  "scripts": {
+    "d1": "node day1/day1.js",
+    "d2": "node day2/day2.js",
+    "d3": "node day3/day3.js",
+    "d4": "node day4/day4.js",
+    "d5": "node day5/day5.js",
+    "d6": "node day6/day6.js",
+    "d7": "node day7/day7.js",
+    "d8": "node day8/day8.js",
+    "d9": "node day9/day9.js",
+    "d10": "node day10/day10.js",
+    "d12": "node day12/day12.js",
+    "d14": "node day14/day14.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrnz/adventfocode.git"
+  },
+  "author": "Przemek Marciniak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrnz/adventfocode/issues"
+  },
+  "homepage": "https://github.com/mrnz/adventfocode#readme",
+  "dependencies": {
+    "md5": "^2.0.0"
+  }
+}

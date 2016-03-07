@@ -1,5 +1,5 @@
 var fs = require('fs'),
-    input = fs.readFileSync(__dirname+'/assets/day14-input.txt').toString(),
+    input = fs.readFileSync(__dirname+'/day14-input.txt').toString(),
     lines = input.split('\n');
 
 (function(data, afterTime) {

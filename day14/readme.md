@@ -1,4 +1,6 @@
---- Day 14: Reindeer Olympics ---
+# Day 14: Reindeer Olympics
+
+### --- Part One ---
 
 This year is the Reindeer Olympics! Reindeer can fly at high speeds, but must rest occasionally to recover their energy. Santa would like to know which of his reindeer is fastest, and so he has them race.
 
@@ -16,7 +18,7 @@ Given the descriptions of each reindeer (in your puzzle input), after exactly 25
 
 Your puzzle answer was 2696.
 
---- Part Two ---
+### --- Part Two ---
 
 Seeing how reindeer move in bursts, Santa decides he's not pleased with the old scoring system.
 

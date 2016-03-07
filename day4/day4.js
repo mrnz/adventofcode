@@ -1,23 +1,21 @@
 
 var prefix = 'yzbqklnj';
-var CryptoJS = require("./../helpers/md5.js");
-var md5 = CryptoJS.MD5;
-var input = prefix;
+var md5 = require("./../node_modules/md5/md5.js");
 
-(function() {
+var findHash = function(firstZeros) {
 
   console.time('time: ');
-  var result, n;
+
+  var result, n, patern = '0000000000000'.slice(0,firstZeros);
 
   result = false;
   n = 0;
-  
-  
+    
   while(result === false){
 
     var hash = md5( prefix + n.toString() ).toString();
 
-    if(hash.slice(0,5) === '00000'){
+    if(hash.slice(0,firstZeros) === patern){
       result = n;
     } 
 
@@ -30,34 +28,8 @@ var input = prefix;
   console.log('Result: ' + result);
   console.timeEnd('time: ') 
   
-})();
+};
 
+findHash(5);
+findHash(6);
 
-
-(function() {
-
-  console.time('time: ');
-  var result, n;
-
-  result = false;
-  n = 0;
-  
-  
-  while(result === false){
-
-    var hash = md5( prefix + n.toString() ).toString();
-
-    if(hash.slice(0,6) === '000000'){
-      result = n;
-    } 
-
-    if(n%10000 === 0){
-      console.log(n)
-    }
-
-    n++;
-  } 
-  console.log('Result: ' + result);
-  console.timeEnd('time: ') 
-  
-})();
