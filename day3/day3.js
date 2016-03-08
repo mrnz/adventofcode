@@ -8,7 +8,7 @@ var input = fs.readFileSync(__dirname+'/day3-input.txt').toString();
   var map = ['0x0'];
   var actualPosition = [0,0];
   var temp; 
-  for (var i = 0; i < l -1; i++) {
+  for (var i = 0; i <= l -1; i++) {
 
     var step =  input[i];
 
@@ -48,7 +48,7 @@ var input = fs.readFileSync(__dirname+'/day3-input.txt').toString();
     actualPositionR : [0,0]
   };
   var temp; 
-  for (var i = 0; i < l -1; i++) {
+  for (var i = 0; i <= l -1; i++) {
 
     var step =  input[i];
     var next;

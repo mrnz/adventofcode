@@ -2,7 +2,7 @@
 var prefix = 'yzbqklnj';
 var md5 = require("./../node_modules/md5/md5.js");
 
-var findHash = function(firstZeros) {
+var findHash = function(firstZeros, prefix) {
 
   console.time('time: ');
 
@@ -30,6 +30,6 @@ var findHash = function(firstZeros) {
   
 };
 
-findHash(5);
-findHash(6);
+findHash(5, 'yzbqklnj');
+findHash(6, 'yzbqklnj');
 

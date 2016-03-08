@@ -2,17 +2,17 @@
 
 const fs = require('fs');
 var input = fs.readFileSync(__dirname+'/day1-input.txt').toString();
-var lines = input.split('\n');
 
-(function(d) {
+module.exports = function(data) {
+
   
   var i = 0
   var result = 0;
   var firstInBasement = false;
 
-  while( i < input.length ){
+  while( i < data.length ){
     
-    if(input[i] === '('){
+    if(data[i] === '('){
       result++;
     }else{
       result--;
@@ -25,7 +25,7 @@ var lines = input.split('\n');
     i++;
   }
   
-  console.log('Result: ' + result )
-  console.log("Santa entered first time to the basement in " + firstInBasement + " step" );
-
-})();
+  // console.log('Result: ' + result )
+  // console.log("Santa entered first time to the basement in " + firstInBasement + " step" );
+  return [result,firstInBasement];
+};
