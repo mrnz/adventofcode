@@ -1,6 +1,6 @@
 var assert = require('assert'),
-    day3part1 = require('../day3/3-1.js')
-    day3part2 = require('../day3/3-2.js');
+    day3part1 = require('../day03/3-1.js')
+    day3part2 = require('../day03/3-2.js');
 
 describe('Day 3', function() {
 

@@ -1,10 +1,10 @@
 var assert = require('assert'),
-    day8part1 = require('../day8/8-1.js'),
-    day8part2 = require('../day8/8-2.js');
+    day8part1 = require('../day08/8-1.js'),
+    day8part2 = require('../day08/8-2.js');
 
 
 var fs = require('fs');
-var input = fs.readFileSync(__dirname+'/../day8/day8-input-test.txt').toString();
+var input = fs.readFileSync(__dirname+'/../day08/day8-input-test.txt').toString();
 var lines = input.split('\n');
 
 describe('Day 8', function() {
