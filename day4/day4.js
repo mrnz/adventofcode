@@ -1,35 +1,6 @@
+var prefix = 'yzbqklnj',
+    d4 = require('./4-1.js');
 
-var prefix = 'yzbqklnj';
-var md5 = require("./../node_modules/md5/md5.js");
-
-var findHash = function(firstZeros, prefix) {
-
-  console.time('time: ');
-
-  var result, n, patern = '0000000000000'.slice(0,firstZeros);
-
-  result = false;
-  n = 0;
-    
-  while(result === false){
-
-    var hash = md5( prefix + n.toString() ).toString();
-
-    if(hash.slice(0,firstZeros) === patern){
-      result = n;
-    } 
-
-    if(n%10000 === 0){
-      console.log(n)
-    }
-
-    n++;
-  } 
-  console.log('Result: ' + result);
-  console.timeEnd('time: ') 
-  
-};
-
-findHash(5, 'yzbqklnj');
-findHash(6, 'yzbqklnj');
+console.log( 'day 4 part 1 - result is: ' + d4(5, prefix) );
+console.log( 'day 4 part 2 - result is: ' + d4(6, prefix) );
 

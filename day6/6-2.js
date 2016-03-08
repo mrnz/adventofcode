@@ -31,11 +31,13 @@ module.exports = function(data) {
         break;            
     };
 
-    for(;coordinats.x1-1 < coordinats.x2; coordinats.x1++){
-      var Y = coordinats.y1-1;
+    for(;coordinats.x1 <= coordinats.x2; coordinats.x1++){
+
+      var Y = coordinats.y1;
       for(;Y <= coordinats.y2; Y++){
         grid[coordinats.x1][Y] = action(grid[coordinats.x1][Y]);
       } 
+    
     }
 
   });
