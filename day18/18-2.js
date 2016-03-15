@@ -16,7 +16,12 @@ module.exports = function(input, stepsNumber) {
 		dataIn.forEach(function(line,indexLine){
 			temp.push([]);
 			for(var i = 0; i<line.length; i++){
-				temp[indexLine].push(line[i]);
+				if( (indexLine === 0 && i === 0) || (indexLine === dataIn.length-1 && i === line.length-1) || (indexLine === dataIn.length-1 && i === 0) || (indexLine === 0 && i === line.length-1)  ) {
+					temp[indexLine].push('#');	 
+				}else{
+					temp[indexLine].push(line[i]);	
+				}
+				
 			};
 		});	
 		return temp;
@@ -28,8 +33,13 @@ module.exports = function(input, stepsNumber) {
 		var newState = [];
 
 		dataIn.forEach(function(row,idxRow){
+		
 			newState.push([])
 			row.forEach(function(char,idxChar){
+
+				if( (idxRow === 0 && idxChar === 0) || (idxRow === dataIn.length-1 && idxChar === 0) || (idxRow === dataIn.length-1 && idxChar === row.length-1) || (idxRow === 0 && idxChar === row.length-1) ) {
+					return newState[idxRow][idxChar] = '#';
+				}
 
 				var actualStatus = prevState[idxRow][idxChar] === '#' ? true : false;
 				var neighbors = [];
@@ -75,6 +85,8 @@ module.exports = function(input, stepsNumber) {
 					}	
 				}
 				
+		
+
 				if(actualStatus){
 
 					if(neighbors.length === 2 || neighbors.length === 3){
@@ -105,12 +117,13 @@ module.exports = function(input, stepsNumber) {
 			})
 		})
 		return result
-	}
+	};
 
 	map = createMap(input);
 	next = step(map);
 	for(var k = 1; k < stepsNumber; k++){
 		next = step(next);
-	}
+	};
+	
 	return countLightsOn(next);
 }
