@@ -1,0 +1,3 @@
+hp: 109
+damage: 8
+armor: 2
