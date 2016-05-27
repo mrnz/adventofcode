@@ -7,6 +7,10 @@ describe('Day 10', function() {
 
   describe('Part One', function() {
     
+    it('should throw 3 when the way is undefined', function () {
+      assert.equal( 'Error: indicator should be "longest" or "shortest"', day9(testTable1) );
+    });
+
     it('should return 3 as a shortest way', function () {
       assert.equal( 3, day9(testTable1, 'shortest') );
     });

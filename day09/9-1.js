@@ -4,7 +4,7 @@ var fs = require('fs'),
 module.exports = function(data, indicator) { 
 
   if( ! (indicator === 'shortest' || indicator === 'longest') ){
-    throw 'Error: indicator not correct - second parameter should be "longest" or "shortest"';
+    return 'Error: indicator should be "longest" or "shortest"';
   };
 
   var distances = {}, towns = [], 
