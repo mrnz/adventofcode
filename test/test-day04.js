@@ -13,10 +13,6 @@ describe('Day 4', function() {
       assert.equal( 5867, day4part1(3,'AAA') );
     });
 
-    it('should return ', function () {
-      assert.equal( 148172, day4part1(4,'AAAA') );
-    });
-
   });
 
   describe('Part Two', function() {
