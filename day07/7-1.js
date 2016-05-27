@@ -20,13 +20,14 @@ module.exports = function(data, toFind, overwriteChar, overwriteVal) {
         return cache[toFind];
     }   
     var args = all[toFind].split(" ");
-    
+    console.log(args)
     if(args.length == 1) {
       cache[toFind] = find(args[0]);
       return cache[toFind];
     };
 
     if(args.length == 2) {
+      console.log('dsadad')
       var not = ~find(args[1]);
       not = (not<0) ? (65536+not) : not; 
       cache[toFind] = not;
