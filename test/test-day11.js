@@ -17,6 +17,7 @@ describe('Day 11', function() {
 
   describe('Part Two', function() {
     it('Should return mmnpp when input is lllll', function () {
+      this.timeout(5000);
       assert.equal( 'aabcc', day11part1('lll') );
     });
   });
