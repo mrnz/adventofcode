@@ -25,11 +25,11 @@ module.exports = function(input,teaspoons, caloriesLimit) {
 
   generateMap = function () {
     var res = [];
-    for (var a = 1; a < 100; a++){
-      for (var b = 1; b < 100; b++){
-        for (var c = 1; c < 100; c++){
-          for (var d = 1; d < 100; d++){
-            if(a+b+c+d === 100){
+    for (var a = 1; a < teaspoons; a++){
+      for (var b = 1; b < teaspoons; b++){
+        for (var c = 1; c < teaspoons; c++){
+          for (var d = 1; d < teaspoons; d++){
+            if(a+b+c+d === teaspoons){
              res.push([a,b,c,d])
             }
           }    
