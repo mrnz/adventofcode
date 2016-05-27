@@ -34,6 +34,10 @@ describe('Day 16', function() {
       assert.equal( 471, day16part2(lines, {cars: 2, perfumes: 3, children: 4}) );
     });
 
+    it('should return 411 when input is { children: 3, cats: 7, samoyeds: 2, pomeranians: 3, vizslas: 0, goldfish: 5}', function () {
+      assert.equal( 411, day16part2(lines, { children: 3, cats: 7, samoyeds: 2, pomeranians: 3, vizslas: 0, goldfish: 5}) );
+    });
+
   });
 
 });    
