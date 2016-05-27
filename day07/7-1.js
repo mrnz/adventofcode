@@ -27,7 +27,6 @@ module.exports = function(data, toFind, overwriteChar, overwriteVal) {
     };
 
     if(args.length == 2) {
-      console.log('dsadad')
       var not = ~find(args[1]);
       not = (not<0) ? (65536+not) : not; 
       cache[toFind] = not;

@@ -16,8 +16,8 @@ describe('Day 11', function() {
   });
 
   describe('Part Two', function() {
-        it('Should return mmnpp when input is lllll', function () {
-      assert.equal( 'mmnpp', day11part1('lllll') );
+    it('Should return mmnpp when input is lllll', function () {
+      assert.equal( 'aabcc', day11part1('lll') );
     });
   });
 

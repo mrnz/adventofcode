@@ -1,7 +1,7 @@
 var assert = require('assert'),
     day7part1 = require('../day07/7-1.js');
 
-describe('Day 8', function() {
+describe('Day 7', function() {
 
   describe('Part One', function() {
 
