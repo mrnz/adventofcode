@@ -26,9 +26,9 @@ describe('Day 6', function() {
 
   describe('Part Two', function() {
 
-    it('should return 2000000 when input is "toggle 0,0 through 999,999"', function () {
+    it('should return 242 when input is "toggle 0,0 through 10,10"', function () {
       this.timeout(5000);
-      assert.equal( 2000000, day6part2(['toggle 0,0 through 999,999']) );
+      assert.equal( 242, day6part2(['toggle 0,0 through 10,10']) );
     });
 
     it('should return 1 when input is "turn on 0,0 through 0,0"', function () {
