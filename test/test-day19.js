@@ -1,7 +1,6 @@
 var assert = require('assert'),
-    d19_1 = require('../day19/19-1.js');
-
-
+    d19_1 = require('../day19/19-1.js'),
+    d19_2 = require('../day19/19-2.js');
 
 describe('Day 19', function() {
 
@@ -25,7 +24,15 @@ describe('Day 19', function() {
 
   describe('Part Two', function() {
     
-     
+    var testTransf3 = ["e => H"];
+    it('should return 4 when input is "e => H" and molecule is "H"', function () {
+      assert.equal( 1, d19_2('H',testTransf3) );
+    });   
+
+    var testTransf4 = ["e => H", "H => O"];
+    it('should return 4 when input is "e => H", "H => O" and molecule is "O"', function () {
+      assert.equal( 2, d19_2('O',testTransf4) );
+    });     
      
   });
 
