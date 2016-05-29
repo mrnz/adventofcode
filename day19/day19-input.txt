@@ -1,4 +1,4 @@
-day19-input.txtAl => ThF
+Al => ThF
 Al => ThRnFAr
 B => BCa
 B => TiB
