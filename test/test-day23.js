@@ -18,12 +18,13 @@ describe('Day 23', function() {
 
   });
 
-  // describe('Part Two', function() {
+  describe('Part Two', function() {
     
-  //   it('should return 188 when input is from adventofcode.com and win is false', function () {
-  //     assert.equal( 188, d23_1(input,false) );
-  //   }); 
+    var test3 = ['jmp +1','inc a','jio a, +1','inc a','jie a, +1','tpl a','hlf a'];
+    it('should return 3 when input is a my example and start values are 2 and 1', function () {
+      assert.equal( 6, d23_1(test3,'a', 2 , 1) );
+    });  
      
-  // });
+  });
 
 });

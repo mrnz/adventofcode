@@ -6,4 +6,4 @@ var d23_1 = require('./23-1.js'),
 
 
 console.log( 'day 23 part 1 - result is: ' + d23_1(input) );
-// console.log( 'day 21 part 2 - result is: ' + d21_1(input, false) );
+console.log( 'day 21 part 2 - result is: ' + d23_1(input, 'b', 1, 0) );

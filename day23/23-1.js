@@ -1,11 +1,13 @@
 'use strict';
-module.exports = function(input, register) {
+module.exports = function(input, register, startA, startB) {
 	var idx = 0,
 			r = {
 				a:0,
 				b:0
 			},
 			register = typeof register === 'undefined' ? 'b' : register;
+	if (typeof startA !== 'undefined') {r.a = startA;};
+	if (typeof startB !== 'undefined') {r.b = startB;};
 	
 	while(idx >= 0 && input.length>idx){
 		
