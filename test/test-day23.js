@@ -11,9 +11,9 @@ describe('Day 23', function() {
       assert.equal( 2, d23_1(test1,'a') );
     }); 
 
-    var test2 = ['jmp +1','inc a','jio a, +1','inc a','jie a, +1','tpl a'];
-    it('should return 6 when input is a my example', function () {
-      assert.equal( 6, d23_1(test2,'a') );
+    var test2 = ['jmp +1','inc a','jio a, +1','inc a','jie a, +1','tpl a','hlf a'];
+    it('should return 3 when input is a my example', function () {
+      assert.equal( 3, d23_1(test2,'a') );
     }); 
 
   });
