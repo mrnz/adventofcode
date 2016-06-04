@@ -14,16 +14,16 @@ module.exports = function(input, numberOfLoops) {
       while(string[j] === string[j+1]){
         ++j;
         ++factor;
-      };
+      }
 
       memo += factor+''+string[j]
       j++;
 
-    };
+    }
 
     string = memo;
 
-  };
+  }
 
   return string.length;
 
