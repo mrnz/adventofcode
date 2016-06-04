@@ -1,7 +1,6 @@
 module.exports = function(data) { 
     
-  var encoded = 0;
-  var total = 0;
+  var encoded = 0, total = 0;
 
   data.forEach(function(line) {
       
