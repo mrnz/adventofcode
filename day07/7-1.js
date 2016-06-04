@@ -20,7 +20,6 @@ module.exports = function(data, toFind, overwriteChar, overwriteVal) {
         return cache[toFind];
     }   
     var args = all[toFind].split(" ");
-    console.log(args)
     if(args.length == 1) {
       cache[toFind] = find(args[0]);
       return cache[toFind];
