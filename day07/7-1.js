@@ -59,6 +59,7 @@ module.exports = function(data, toFind, overwriteChar, overwriteVal) {
   data.forEach( line => {
     init(line);
   });
+  
   if( typeof overwriteChar !== 'undefined' ){
     all[overwriteChar] = overwriteVal;  
   }
