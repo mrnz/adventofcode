@@ -15,14 +15,10 @@ module.exports = function(firstZeros, prefix) {
 
     if(hash.slice(0,firstZeros) === patern){
       result = n;
-    } 
-
-    if(n%10000 === 0){
-      //console.log(n)
-    }
+    };
 
     n++;
-  } 
+  };
   
   return result;
 
