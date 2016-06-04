@@ -36,7 +36,7 @@ module.exports = function(data, indicator) {
       
       for (var i = 1; i < posib.length; i++) {
         counter += distances[posib[i]][posib[i-1]];
-      };
+      }
       if( indicator === 'longest' ){
         result = result>counter? result : counter
       }else if( indicator === 'shortest' ){
