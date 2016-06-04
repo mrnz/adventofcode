@@ -10,7 +10,7 @@ module.exports = function(input) {
     
     if( test1.test(string) && test2.test(string) && test3.test(string) ){
       result++;
-    }
+    };
       
   });
 
