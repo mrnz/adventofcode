@@ -1,21 +1,35 @@
 {
   "name": "advent-of-code-mrnz",
   "version": "1.0.0",
-  "description": "my solutions of problems from adventofcode.com",
+  "description": "My solutions to problems from adventofcode.com",
   "main": "index.js",
   "scripts": {
-    "d1": "node day1/day1.js",
-    "d2": "node day2/day2.js",
-    "d3": "node day3/day3.js",
-    "d4": "node day4/day4.js",
-    "d5": "node day5/day5.js",
-    "d6": "node day6/day6.js",
-    "d7": "node day7/day7.js",
-    "d8": "node day8/day8.js",
-    "d9": "node day9/day9.js",
+    "test":"./node_modules/.bin/_mocha",
+    "d1": "node day01/day1.js",
+    "d2": "node day02/day2.js",
+    "d3": "node day03/day3.js",
+    "d4": "node day04/day4.js",
+    "d5": "node day05/day5.js",
+    "d6": "node day06/day6.js",
+    "d7": "node day07/day7.js",
+    "d8": "node day08/day8.js",
+    "d9": "node day09/day9.js",
     "d10": "node day10/day10.js",
     "d12": "node day12/day12.js",
-    "d14": "node day14/day14.js"
+    "d13": "node day13/day13.js",
+    "d14": "node day14/day14.js",
+    "d15": "node day15/day15.js",
+    "d16": "node day16/day16.js",
+    "d17": "node day17/day17.js",
+    "d18": "node day18/day18.js",
+    "d19": "node day19/day19.js",
+    "d20": "node day20/day20.js",
+    "d21": "node day21/day21.js",
+    "d22": "node day22/day22.js",
+    "d23": "node day23/day23.js",
+    "d24": "node day24/day24.js",
+    "d25": "node day25/day25.js",
+    "start": "node day01/day1.js && node day02/day2.js && node day03/day3.js && node day04/day4.js && node day05/day5.js && node day06/day6.js && node day07/day7.js && node day08/day8.js && node day09/day9.js && node day10/day10.js && node day11/day11.js && node day12/day12.js && node day13/day13.js && node day14/day14.js && node day15/day15.js && node day16/day16.js && node day17/day17.js && node day18/day18.js && node day19/day19.js && node day20/day20.js && node day21/day21.js && node day22/day22.js && node day23/day23.js && node day24/day24.js && node day25/day25.js"
   },
   "repository": {
     "type": "git",
@@ -29,11 +43,11 @@
   "homepage": "https://github.com/mrnz/adventfocode#readme",
   "dependencies": {
     "js-combinatorics": "^0.5.0",
-    "md5": "^2.0.0",
-    "mocha": "^2.4.5"
+    "md5": "^2.0.0"
   },
   "devDependencies": {
     "codecov.io": "^0.1.6",
-    "istanbul": "^0.4.3"
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5"
   }
 }
