@@ -47,3 +47,15 @@ So, to find the second code (which ends up in row 2, column 1), start with the p
 "Now remember", the voice continues, "that's not even all of the first few numbers; for example, you're missing the one at 7,1 that would come before 6,2. But, it should be enough to let your-- oh, it's time for lunch! Bye!" The call disconnects.
 
 Santa looks nervous. Your puzzle input contains the message on the machine's console. What code do you give the machine?
+
+### --- Part Two --- 
+
+The machine springs to life, then falls silent again. It beeps. "Insufficient fuel", the console reads. "**Fifty stars** are required before proceeding. **One star** is available."
+
+..."one star is available"? You check the fuel tank; sure enough, a lone star sits at the bottom, awaiting its friends. Looks like you need to provide 49 yourself.
+
+If you like, you can [Turn it off and on again].
+
+**Both parts of this puzzle are complete! They provide two gold stars.**
+
+At this point, all that is left is for you **to admire your advent calendar**.
