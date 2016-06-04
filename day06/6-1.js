@@ -46,7 +46,7 @@ module.exports = function(data) {
       if(row)result++;
     });
 
-  })
+  });
 
   return result;
 
