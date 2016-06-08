@@ -2,7 +2,7 @@
 
 [![Travis](https://img.shields.io/travis/mrnz/adventofcode.svg?maxAge=20&style=plastic)](https://travis-ci.org/mrnz/adventofcode) [![Codecov](https://img.shields.io/codecov/c/github/mrnz/adventofcode.svg?maxAge=20&style=plastic)](https://codecov.io/gh/mrnz/adventofcode)
 
-my solutions to problems from [adventofcode.com](http://adventofcode.com)
+Here are My solutions to problems from [adventofcode.com](http://adventofcode.com). Script are written in JavaScript and run in Node.js. All are covered by tests written in Mocha testing framework. Report is created by Istambul code coverage tool (See [details](https://codecov.io/gh/mrnz/adventofcode) ). Merry Christmas! 
 
 
 ## Installation
