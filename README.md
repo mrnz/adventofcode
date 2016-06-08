@@ -31,4 +31,6 @@ Each script is covered by tests run using [Mocha](https://mochajs.org/). You can
 
 ``` npm test ```
 
+![ChristmasTree](https://raw.githubusercontent.com/mrnz/adventofcode/master/res.png)
+
 
