@@ -16,7 +16,7 @@ describe('Day 2', function() {
 
     it('should return 24 when input array is ["1x2x3"]', function () {
       assert.equal( 24, day2part1(['1x2x3']) );
-    });
+    }); 
 
   });
 
