@@ -1,6 +1,6 @@
 module.exports = function(data) { 
     
-  var total = 0, string = 0;
+  var total = 0, string = 0; 
 
   data.forEach(function(line) {
     
