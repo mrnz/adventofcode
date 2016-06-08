@@ -1,5 +1,5 @@
 var fs = require('fs'),
-    Combinatorics = require('js-combinatorics');
+    Combinatorics = require('js-combinatorics'); 
 
 module.exports = function(data, indicator) { 
 
