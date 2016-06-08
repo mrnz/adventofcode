@@ -19,11 +19,11 @@ Once the repository has been cloned, you may install this all dependency with th
 
 ## Run sctipts
 
-You can run individual script  
+You can run individual script with command:
 
 ``` npm run dX ```
 
-where X is accordingly a number from **1** to **25** or run all script at once (*warning: it can take more then one minute*) with command: 
+where X is accordingly a number from **1** to **25**. You can also run all script at once (*warning: it can take more then one minute*) with command: 
 
 ``` npm start ```
 
