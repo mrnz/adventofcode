@@ -15,6 +15,11 @@ describe('Day 22', function() {
       assert.equal( 106, d22_1(5,10,false) );
     }); 
 
+    it('should return 106 when boss has 51 HP and 9 attack', function () {
+      this.timeout(10000);
+      assert.equal( 900, d22_1(51,9,false) );
+    }); 
+
   });
 
   describe('Part Two', function() {

@@ -4,7 +4,7 @@ module.exports = function(firstZeros, prefix) {
 
   var result, 
       n, 
-      patern = '0000000000000'.slice(0,firstZeros);
+      patern = '0000000000000'.slice(0,firstZeros); 
 
   result = false;
   n = 0;
