@@ -1,6 +1,6 @@
 module.exports = function(data) { 
 
-  var result = 0;
+  var result = 0; 
   var grid = Array.apply(null, {length: 1000}).map(Number.call, function(){
     return  Array.apply(null, {length: 1000}).map(Number.call, function(){return false;})
   });
