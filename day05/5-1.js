@@ -1,7 +1,7 @@
 module.exports = function(input) {
   var result, test1, test2, test3, startTime;
 
-  result = 0; 
+  result = 0;
   test1 = /[aeiou].*[aeiou].*[aeiou]/;
   test2 = /.*([a-z])\1{1}/;
   test3 = /^((?!ab|cd|pq|xy).)*$/;
