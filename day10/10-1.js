@@ -1,7 +1,7 @@
 module.exports = function(input, numberOfLoops) {
 
-  var string = input;
-  
+  var string = input; 
+
   for (var i = 0; i < numberOfLoops; i++) {
 
     var stringLength = string.length,
