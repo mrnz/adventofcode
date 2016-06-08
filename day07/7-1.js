@@ -6,8 +6,8 @@ module.exports = function(data, toFind, overwriteChar, overwriteVal) {
     var temp = item.split(" -> "),
       target = temp[1],
       expresion = temp[0];
-    
-    cache[target] = NaN;
+
+    cache[target] = NaN; 
     all[target] = isNaN(expresion) ? expresion : parseInt(expresion);
   };
 
