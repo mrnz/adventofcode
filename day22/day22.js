@@ -1,7 +1,4 @@
-var d22_1 = require('./22-1.js'),
-		boss = {hp:51,damage:9};
+var d22_1 = require('./22-1.js');
 
-
-
-console.log( 'day 22 part 1 - result is: ' + d22_1(boss) );
-// console.log( 'day 21 part 2 - result is: ' + d21_1(input, false) );
+console.log( 'day 22 part 1 - result is: ' + d22_1(51,9,false) );
+console.log( 'day 22 part 2 - result is: ' + d22_1(51,9,true) );
