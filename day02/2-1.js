@@ -1,16 +1,11 @@
+'use strict';
 module.exports = function(input) {
 
   var result = 0;
 
-  input.forEach(function(line, index) {
+  input.forEach(function(line) {
     
-    var arr = line.split('x');
-
-    arr.forEach(function(dimeter, ind) { 
-      arr[ind] = parseInt(dimeter);
-    });
-
-    arr.sort(function(a,b) {
+    var arr = line.split('x').sort((a,b) => {
       return a - b;
     });
 
