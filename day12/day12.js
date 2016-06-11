@@ -1,5 +1,4 @@
-var fs = require('fs'),
-    input = fs.readFileSync(__dirname+'/day12-input.txt').toString(),
+var input = require('fs').readFileSync(__dirname+'/day12-input.txt').toString(),
     d12_1 = require('./12-1.js'),
     d12_2 = require('./12-2.js');
 
