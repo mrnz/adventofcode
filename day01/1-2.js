@@ -1,23 +1,16 @@
-module.exports = function(data) {
+'use strict';
+module.exports = data => {
 
-  var i = 0,
-      result = 0,
-      firstInBasement = false;
+  var result = 0, firstInBasement = false;
 
-  while( i < data.length ){
+  for( let i = 0; i < data.length; i++ ){
     
-    if(data[i] === '('){
-      result++;
-    }else if( data[i] === ')' ){
-      result--;
-    };
+    data[i] === '(' ? result++ : result--;
 
-    if(result<0 && firstInBasement === false){
+    if( result < 0 && !firstInBasement ){
       firstInBasement = i + 1;
     }
-
-    i++;
   }
-  
   return firstInBasement;
+  
 };

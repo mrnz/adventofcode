@@ -1,17 +1,10 @@
-module.exports = function(data) {
+'use strict';
+module.exports = data => {
   
-  var i = 0,
-      result = 0;
+  var result = 0;
 
-  while( i < data.length ){
-    
-    if(data[i] === '('){
-      result++;
-    }else if( data[i] === ')' ){
-      result--;
-    };
-
-    i++;
+  for( let i = 0; i < data.length; i++ ){
+    data[i] === '(' ? result++ : result--;
   }
   
   return result;
