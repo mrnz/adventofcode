@@ -2,7 +2,7 @@ module.exports = function(data) {
     
   var total = 0, string = 0; 
 
-  data.forEach(function(line) {
+  data.forEach( line => {
     
     total += line.length;
     
