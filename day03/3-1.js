@@ -1,16 +1,16 @@
+'use strict';
 module.exports = function(input) { 
 
   var l = input.length,
       map = ['0x0'],
       actualPosition = [0,0],
-      temp;
+      temp, i;
 
-  for (var i = 0; i <= l -1; i++) {
+  for (i = 0; i <= l -1; i++) {
 
-    var next,
+    let next,
         step = input[i];
          
-
     switch (step){
       case '^':
         actualPosition[1] += 1;
@@ -28,10 +28,8 @@ module.exports = function(input) {
     
     temp = actualPosition[0] + 'x' +  actualPosition[1];
 
-    if(map.indexOf(temp) === -1){
-      map.push(temp); 
-    }
-  
+    map.indexOf(temp) === -1 && map.push(temp);
+
   };
 
   return map.length;
