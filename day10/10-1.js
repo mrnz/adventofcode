@@ -1,15 +1,15 @@
-module.exports = function(input, numberOfLoops) {
+module.exports = function(string, numberOfLoops) {
 
-  var string = input; 
+  var i, j, stringLength, memo, factor; 
 
-  for (var i = 0; i < numberOfLoops; i++) {
+  for ( i = 0; i < numberOfLoops; i++) {
 
-    var stringLength = string.length,
-        memo = '';
+    stringLength = string.length;
+    memo = '';
 
-    for (var j = 0; j < stringLength; ) {
+    for ( j = 0; j < stringLength; ) {
 
-      var factor = 1;
+      factor = 1;
       
       while(string[j] === string[j+1]){
         ++j;
