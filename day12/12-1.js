@@ -5,9 +5,7 @@ module.exports = function(data) {
   
   if(numbers === null ) return result;
 
-  numbers.forEach(function(number) { 
-    result += parseInt(number);
-  });
+  numbers.forEach( number => result += parseInt(number) );
 
   return result;
 
