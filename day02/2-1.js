@@ -1,9 +1,8 @@
-'use strict';
-module.exports = function(input) {
+module.exports = input => {
 
   var result = 0;
 
-  input.forEach(function(line) {
+  input.forEach( line => {
     
     var arr = line.split('x').sort((a,b) => {
       return a - b;
