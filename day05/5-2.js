@@ -1,4 +1,4 @@
-module.exports = function(input) {
+module.exports = input => {
   
   var result, test1, test2, test3, startTime;
 
@@ -7,7 +7,7 @@ module.exports = function(input) {
   test2 = /(\w)\w\1/;
   
   
-  input.forEach(function(string, index) {
+  input.forEach( (string, index) => {
     
     if( test1.test(string) && test2.test(string) ){
       result++;
