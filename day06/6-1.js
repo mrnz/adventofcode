@@ -21,13 +21,13 @@ module.exports = function(data) {
 
     switch(command){
       case ' ': //toggle
-        action = function(val) { return !val }
+        action = val => !val;
         break; 
       case 'n': //turn on
-        action = function(val) { return true }
+        action = val => true;
         break;            
       case 'f': //turn off
-        action = function(val) { return false }
+        action = val => false;
         break;            
     };
 
