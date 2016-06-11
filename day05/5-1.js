@@ -8,9 +8,7 @@ module.exports = input => {
   
   input.forEach( (string, index) => {
     
-    if( test1.test(string) && test2.test(string) && test3.test(string) ){
-      result++;
-    };
+    test1.test(string) && test2.test(string) && test3.test(string) && result++;
       
   });
 
