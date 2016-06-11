@@ -7,9 +7,7 @@ module.exports = function(row, column, initialValue) {
       nextVal, 
       nextCoordinates;
   
-  nextVal = prev => {
-    return prev * 252533 % 33554393;
-  };
+  nextVal = prev => prev * 252533 % 33554393;
   
   nextCoordinates = prev => {
     if ( prev.r === 1 ){
