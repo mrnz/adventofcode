@@ -2,7 +2,7 @@ module.exports = function(data, afterTime) {
   
   var results = [];
 
-  data.forEach(function(line) {
+  data.forEach( line => {
     
     var time = 0,
         distance = 0,
@@ -44,7 +44,7 @@ module.exports = function(data, afterTime) {
     results.push(distance);
 
   }); 
-  
-  return results.sort(function(a,b) { return a<b; })[0];
+
+  return results.sort( (a,b) => a<b )[0];
 
 }

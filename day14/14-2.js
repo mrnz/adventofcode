@@ -6,7 +6,7 @@ module.exports = function (data, totalTime) {
   for (var time = 1; time <= totalTime; time++) {  
 
     // initialize temp array with length equals reindeers number and starting distance 0
-    var distancesInTimePoint = Array.apply(null, Array(data.length)).map(function(){return 0;});
+    var distancesInTimePoint = Array.apply(null, Array(data.length)).map(x=>0);
 
     data.forEach(function(line, index) {
       
@@ -55,9 +55,7 @@ module.exports = function (data, totalTime) {
     },[]);
     
     // distribute points to according to indexes
-    resultsAtThisTimePoint.forEach(function(v,i) {
-      results[v] += 1;
-    });
+    resultsAtThisTimePoint.forEach( v => results[v] += 1 );
     
   };
 
