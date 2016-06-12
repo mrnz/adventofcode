@@ -73,12 +73,17 @@ module.exports = function(input,teaspoons, caloriesLimit) {
   };
   
   calcMaxScore = function (prevValue, currentPossibility, indexOfcurrentCurrentPossibility) {
-    var res;
-    res = getScoreForThisPossibility(currentPossibility, pointMap); 
+    
+    var res = getScoreForThisPossibility(currentPossibility, pointMap); 
+    
     if( !isNaN(caloriesLimit) ){
       res.score = res.calories <= caloriesLimit ? res.score : 0; 
+    }else{
+      console.log(caloriesLimit)
     }
+
     return prevValue > res.score ? prevValue : res.score;
+
   };
 
   pointMap = input.map(parseInput);
