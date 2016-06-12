@@ -78,10 +78,8 @@ module.exports = function(input,teaspoons, caloriesLimit) {
     
     if( !isNaN(caloriesLimit) ){
       res.score = res.calories <= caloriesLimit ? res.score : 0; 
-    }else{
-      console.log(caloriesLimit)
     }
-
+    
     return prevValue > res.score ? prevValue : res.score;
 
   };
