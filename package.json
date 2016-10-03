@@ -47,7 +47,7 @@
     "md5": "^2.0.0"
   },
   "devDependencies": {
-    "codecov.io": "^0.1.7",
+    "codecov.io": "latest",
     "istanbul": "^0.4.3",
     "mocha": "^2.4.5"
   }
