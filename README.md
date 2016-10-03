@@ -1,6 +1,6 @@
 # Advent of Code
 
-[![Travis](https://img.shields.io/travis/mrnz/adventofcode.svg?maxAge=20&style=plastic)](https://travis-ci.org/mrnz/adventofcode) [![Codecov](https://codecov.io/github/mrnz/adventofcode/coverage.svg?branch=master)](https://codecov.io/gh/mrnz/adventofcode)
+[![Travis](https://img.shields.io/travis/mrnz/adventofcode.svg?maxAge=20&style=plastic)](https://travis-ci.org/mrnz/adventofcode) [![Codecov](https://img.shields.io/codecov/c/github/mrnz/adventofcode.svg?maxAge=20&style=plastic)](https://codecov.io/gh/mrnz/adventofcode)
 
 ## Description
 
